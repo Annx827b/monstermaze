@@ -58,6 +58,7 @@ public class PlayerMovement : MonoBehaviour
             OnHitEnemy?.Invoke();
             if (hitpoints <= 0)
             {
+                OnDie?.Invoke();    
                 Debug.Log("Game Over");
             }
         }
