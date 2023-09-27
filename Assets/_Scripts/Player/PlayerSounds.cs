@@ -19,20 +19,20 @@ public class PlayerSounds : MonoBehaviour
 
     public void PlayerCollectPowerUp()
     {
-        PLayClip(AudioClipPowerUp);
+        PlayClip(AudioClipPowerUp);
     }   
 
     public void PlayerDie()
     {
-        PLayClip(AudioClipDie);
+        PlayClip(AudioClipDie);
     }
 
     public void PlayerHitMonster()
     {
-        PLayClip(AudioClipMonster);
+        PlayClip(AudioClipMonster);
     }
 
-    private void PLayClip(AudioClip clip)
+    private void PlayClip(AudioClip clip)
     {
         audioSource.Stop();
         audioSource.clip = clip;  
